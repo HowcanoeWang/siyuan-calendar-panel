@@ -21,11 +21,10 @@
 
 **手动安装：**
 
-* 在[Release](https://github.com/HowcanoeWang/calendar/releases)中，下载对应的`calendar.zip`文件。
-* 解压后，有一个`theme.js`，一个`calendar`文件夹。
+* 在[Release](https://github.com/HowcanoeWang/calendar/releases)中，下载对应的 `calendar.zip`文件。
+* 解压后，有一个 `theme.js`，一个 `calendar`文件夹。
 * `calendar`放到挂件所在那个文件夹，`theme.js`放到所用主题那里，或者复制到已有的 `theme.js` 中（总共也没几行）。
 * 清除缓存后刷新
-
 
 如Savor有如下的文件夹目录结构：
 
@@ -43,12 +42,15 @@ C:\Users\<user>\Documents\SiYuan\conf\appearance\themes\Savor\
 └─theme.js  <-- 替换或插入这里
 ```
 
-
 ## 版本记录
 
-**反编译的纯js版本**
+**反编译的纯js版本(calendar-v7-fix)**
 
-## v230121 (calendar-v7-fix)
+## v230123
+
+* 修复电脑重启后，首次打开思源笔记本配置加载错误
+
+## v230121
 
 * 参考 `js.map`中遗留的信息(`app.4e3d2b88.source.js`)，恢复压缩后的部分变量名，增加代码可读性
 * 优化代码业务逻辑
