@@ -244,7 +244,6 @@
                 );
                 this.$refs.week.addEventListener("click", this.handleWeekClick, false);
                 this.init_open_app();
-                this.changeDate();
             },
             methods: {
                 // 选中笔记本
@@ -327,12 +326,7 @@
                         let print = await this.request("/api/notification/pushMsg", success_str);
                     }
 
-                    // parse the notebook path
-                    // console.log(await this.dayCurrent, this.dailyNotePath);
-                    // if (typeof this.dailyNotePath == 'undefined') {
-                    //     await this.parseNotePath();
-                    // }
-                    // 这段代码在changeData()中有重复的，这边可以省略
+                    this.changeDate();
 
                 },
                 // 新添加功能：解析笔记本路径
@@ -340,7 +334,7 @@
                     // console.log("get in ParseNotePath function", this.currentNotebook.id);
                     // parse the notebook path
                     // path: `/daily note/${e[0]}/${e[1]}/${o}` -> default -> /daily note/2022/10/2022-10-29
-                    let nid = { notebook: this.currentNotebook.id },
+                    let nid = { notebook: await this.currentNotebook.id },
                         nb_conf = await this.request("/api/notebook/getNotebookConf", nid);
 
                     if (0 === nb_conf.code && nb_conf.data) {
