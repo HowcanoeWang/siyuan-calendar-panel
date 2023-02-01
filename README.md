@@ -46,6 +46,11 @@ C:\Users\<user>\Documents\SiYuan\conf\appearance\themes\Savor\
 
 **反编译的纯js版本(calendar-v7-fix)**
 
+## v230201
+
+* 使用`/data/widgets/Calendar.config.json`代替`localstorage['calendar_current_notebook']`作为用户默认日记本配置
+* 修复顶栏星期显示错误
+
 ## v230123
 
 * 修复电脑重启后，首次打开思源笔记本配置加载错误
