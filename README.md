@@ -7,6 +7,8 @@
 原作者：[BryceAndJuly](https://ld246.com/member/BryceAndJuly)
 原项目： [【分享】日历面板](https://ld246.com/article/1662969146166)
 
+**Vue重构项目**: [https://github.com/svchord/siyuan-arco-calendar](https://github.com/svchord/siyuan-arco-calendar)
+
 ## 主题特性
 
 * 日历面板用的是一个叫 [vue-calendar-component](https://ld246.com/forward?goto=https%3A%2F%2Fgithub.com%2FzwhGithub%2Fvue-calendar) 的组件，这个组件看着比较简洁；
